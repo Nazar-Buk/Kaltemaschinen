@@ -1,0 +1,412 @@
+@import "variables";
+@import "extends";
+@import "animation";
+
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid{
+  max-width: 1700px;
+}
+
+.container{
+  max-width: 1320px
+}
+
+.secret-setings{
+  opacity: 0;
+}
+
+
+header {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  background-color: $white;
+
+  //========height========
+  .h-45 {
+    height: 45px;
+  }
+
+
+  //========width========
+
+
+  //========img settings=====
+  .logo-size {
+    height: 39.60222625732422px;
+    width: 104.36888885498047px;
+  }
+
+//////////////////navigation
+  .upper-nav {
+    ul {
+      margin: 0;
+      list-style: none;
+
+      & > li {
+        display: inline-block;
+        margin-right: 10px;
+        position: relative;
+
+        & {
+          ul {
+            position: absolute;
+            left: 12px;
+            width: 110px;
+            z-index: 5;
+            display: none;
+
+            li {
+              display: block;
+
+              a {
+                border: 2px solid gray;
+                border-radius: 8px;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          ul {
+            display: block;
+          }
+        }
+
+
+        a {
+          display: block;
+          text-decoration: none;
+          padding: 2px 10px;
+          border: 2px solid rgba(0, 0, 0, 0);
+          color: $elsasser-Body-Paragraph-Text;
+
+          &:hover {
+            border: 2px solid #EAEDF5;
+            border-radius: 8px;
+            color: $elsasser-Link-Blue;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+main {
+
+    #Luftkondensierte{
+      background-color: $bg-section;
+    }
+
+    h1 {
+      font-size: $fz-48;
+      color: $elsasser-Megaheader;
+    }
+
+    .line{
+      width: 227px;
+      border: 7px solid $elsasser-Body-Paragraph-Text;
+      background-color: $elsasser-Body-Paragraph-Text;
+      opacity: .5;
+    }
+
+    p{
+      font-family: 'Noto Sans Display', sans-serif;
+      font-size: $fz-17;
+    }
+
+    .air-size {
+      width: 653px;
+      height: 655px;
+    }
+
+    .box-multistage{
+      overflow: hidden;
+      height: 470px;
+    }
+
+    .multistage-size{
+      width: 151%;
+      height: auto;
+      left: -20%;
+    }
+
+    h4{
+    color: $elsasser-Megaheader;
+    }
+
+
+  #modernste-standards{
+    font-family: 'Noto Sans Display', sans-serif;
+    color: $elsässer-Darker-Display-Grey;
+    font-size: $fz-17;
+
+    .overflow-hidden{
+      overflow: hidden;
+    }
+
+    img{
+      width: 545px;
+      height: 729px;
+      object-fit: cover;
+      line-height: 32px;
+    }
+
+    h4{
+      font-size: $fz-20;
+      color: $elsässer-Darker-Display-Grey;
+    }
+
+    .blue-gradient{
+      background: $mega-buttons;
+    }
+
+    p{
+      width: 496px;
+      font-weight: 200;
+    }
+
+  }
+
+  #unsere{
+    height: 600px;
+    font-family: 'Noto Sans Display', sans-serif;
+    color: $elsasser-Body-Paragraph-Text;
+    font-size: $fz-17;
+    line-height: 32px;
+
+    div{
+      height: 100%;
+
+      img{
+        height: 100%;
+        left: 174px;
+      }
+
+      h4{
+        color: $elsasser-Megaheader;
+        font-size: $fz-20;
+        line-height: 40px;
+        text-transform: uppercase;
+      }
+
+    }
+
+    .h-50{
+      height: 50%;
+    }
+
+  }
+
+  #ihre-vorteile{
+
+    h2{
+      text-align: center;
+    }
+
+    .settings-info{
+      width: 394px;
+      height: 136px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 16px;
+      font-family: 'Noto Sans Display', sans-serif;
+      background-color: $bg-BFC;
+
+      img{
+        width: 71.04px;
+        height: 52px;
+        left: 30px;
+      }
+
+      p{
+        font-weight: 500;
+        font-size: $fz-19;
+        line-height: 32px;
+        letter-spacing: -0.4px;
+        left: 70px;
+      }
+
+    }
+
+  }
+
+  #hauptmarkmale{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    background-color: $bg-BFC;
+
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: $fz-17;
+    line-height: 35px;
+    letter-spacing: -0.4px;
+    color: #45494F;
+
+    h2{
+      text-align: center;
+    }
+
+    p{
+      padding-bottom: 1.5rem;
+    }
+
+  }
+
+  #bilder{
+
+    h2{
+      text-align: center;
+    }
+
+    .wrap-slider{
+
+      .slider{
+        width: 550px;
+        height: 550px;
+        border-radius: 16px;
+        overflow: hidden;
+
+        .slider-line{
+          width: 1650px;
+          height: 550px;
+
+          left: 0;
+          transition: all ease 1s;
+
+          img{
+            width: 550px;
+            height: 550px;
+          }
+
+        }
+
+      }
+
+    }
+
+    .settings-btn{
+      width: 126px;
+      height: 58px;
+      box-shadow: 0 0 21px rgba(64, 68, 75, 0.14);
+      border-radius: 8px;
+      background-color: $white;
+      text-align: center;
+
+      i{
+        font-size: $fz-48;
+        color: $elsasser-Megaheader;
+      }
+    }
+
+    #prev{
+      transform: rotate(180deg);
+    }
+
+    .wrap-points {
+      left: 340px;
+      bottom: 68px;
+      display: flex;
+      margin-top: 10px;
+
+
+      /*сам кружечок*/
+      .dot {
+        width: 12px;
+        height: 12px;
+        border: 1px solid #0045AC;
+        border-radius: 50%;
+        background-color: rgba(128, 171, 255, 1);
+        margin-right: 20px;
+        cursor: pointer;
+        opacity: 0.35;
+      }
+
+      /*вибраний кружечок*/
+      .selected-dot {
+        background: $mega-buttons;
+        opacity: 1;
+      }
+
+    }
+
+  }
+
+  #besucher{
+
+    h2{
+      text-align: center;
+    }
+
+    .mega-btn{
+      width: 394.55px;
+      height: 64px;
+      @extend %mega-btn;
+          }
+    }
+
+
+  }
+
+footer{
+  background-color: $elsässer-Darker-Display-Grey;
+
+ .btn-kontakt{
+   @extend %mega-btn;
+   width: 306px;
+   height: 69px;
+ }
+
+  h3{
+    color: $elsasser-Megaheader;
+  }
+
+  .footer-colons{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-size: $fz-17;
+    color: $kontakt;
+
+    span{
+      font-weight: bold;
+    }
+
+    p{
+      font-weight: 300;
+      margin-top: 2rem;
+
+      a{
+        text-decoration: none;
+        color: $kontakt;
+      }
+    }
+
+  }
+
+}
+
+
+
+@import "media";
+
+.d-none{
+  display: none;
+}
+
+
+
+
+

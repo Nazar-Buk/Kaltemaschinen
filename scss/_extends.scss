@@ -1,0 +1,12 @@
+@import "variables";
+
+%mega-btn{
+    background: $mega-buttons;
+    color: $btn-Under-Slider;
+    font-size: $fz-17;
+    font-weight: 500;
+    border: 1px solid $white;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.21);
+    border-radius: 12px;
+}

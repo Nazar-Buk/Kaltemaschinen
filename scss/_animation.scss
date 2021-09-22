@@ -1,0 +1,9 @@
+@keyframes menu-animation {
+    0%{
+      transform: skewY(90deg);
+    }
+
+    100%{
+      transform: skewY(0deg);
+    }
+}
